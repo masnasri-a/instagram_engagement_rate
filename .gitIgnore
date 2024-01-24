@@ -1,0 +1,21 @@
+# BEGIN: /Users/nasriadzlani/Workspace/Research/FBSSO/.gitIgnore
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.pyi
+# END: /Users/nasriadzlani/Workspace/Research/FBSSO/.gitIgnore
+
+# Visual Studio Code
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+venv/
