@@ -2,6 +2,7 @@ import requests
 import requests
 from fastapi import FastAPI
 from fastapi.exceptions import HTTPException
+from fastapi.responses import RedirectResponse
 
 app = FastAPI()
 
@@ -42,6 +43,11 @@ def get_engagement_rate(username: str):
         }
     except:
         raise HTTPException(status_code=404, detail="User not found")
+
+
+@app.get("/")
+def home():
+    return RedirectResponse(url="/docs/")
 
 
 @app.get("/engage_rate")
